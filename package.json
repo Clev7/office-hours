@@ -1,0 +1,30 @@
+{
+  "name": "office-hours",
+  "version": "1.0.0",
+  "description": "A utility that makes a text file in yaml-like format of your TA/Prof times and allows you to run npx findAvailableInstructors",
+  "main": "src/index.ts",
+  "bin": "src/index.js",
+  "scripts": {
+    "start": "ts-node src/convertToYAML.ts",
+    "dev": "nodemon -x ts-node src/index.ts"
+  },
+  "keywords": [
+    "officehours",
+    "office-hours",
+    "typescript",
+    "ts"
+  ],
+  "dependencies": {
+    "@types/js-yaml": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "inquirer": "^7.3.3",
+    "js-yaml": "^4.0.0",
+    "json-to-pretty-yaml": "^1.2.2"
+  },
+  "author": "Yousef Abdelsalam",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^14.14.22"
+  }
+}

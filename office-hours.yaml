@@ -1,0 +1,51 @@
+
+  - course: "Problem Solving and Team Dynamics"
+    instructors:
+      - name: "Arup Guha"
+        times:
+          - "Monday 1:00PM - 2:00PM"
+          - "Tuesday 3:30PM - 4:30PM"
+          - "Wednesday 1:00PM - 2:00PM"
+          - "Thursday 9:00AM - 10:00AM"
+          - "Friday 1:00PM - 2:00PM"
+        email: "dmarino@ucf.edu"
+      - name: "Ellie Kozlowski"
+        times:
+          - "Monday 12:30PM - 1:30PM"
+          - "Wednesday 12:30PM - 1:30PM"
+        email: "elliekozlowksi@knights.ucf.edu"
+  - course: "Operating Systems"
+    instructors:
+      - name: "Dr. Lotzi Boloni"
+        times:
+          - "Monday 6:00PM - 7:00PM"
+          - "Wednesday 6:00PM - 7:00PM"
+        email: "Ladislau.Boloni@ucf.edu"
+  - course: "Senior Design I"
+    instructors:
+      - name: "Dr. Lei Wei"
+        times:
+          - "Tuesday 10:00AM - 1:00PM"
+          - "Thursday 10:00AM - 1:00PM"
+        email: "Lei.Wei@ucf.edu"
+      - name: "Dr. Samuel Richie"
+        times:
+          - "Monday 11:00AM - 2:00PM"
+          - "Tuesday 1:30PM - 2:30PM"
+          - "Wednesday 11:00AM - 12:00PM"
+          - "Thursday 2:00PM - 4:00PM"
+        email: "richie@ucf.edu"
+        zoom link: "https://ucf.zoom.us/j/91007674802?pwd=dDJYWWlESVlMMnFieDYxdXppUkJsQT09"
+  - course: "Signal Analysis and Analog Communication"
+    class link: "https://applications.zoom.us/lti/rich/j/96362392515?oauth_consumer_key=iftupLCbSb-NJQVJhd3QWg&lti_scid=bda2baaf571a5cfa53de08210222f1c4089cf7d3c2dd297092a55137b97b2693"
+    instructors:
+      - name: "Dr. Nazanin Rahnavard"
+        times:
+          - "Tuesday 1:00PM - 3:00PM"
+        email: "nazanin.rahnavard@ucf.edu"
+      - name: "Nazmul Karim"
+        times: []
+        email: "nazmul.karim18@knights.ucf.edu"
+      - name: "Mohsen Joneidi"
+        times: []
+        email: "joneidi@knights.ucf.edu"

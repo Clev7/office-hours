@@ -1,0 +1,57 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f8be8afd818, pid=3786, tid=3786
+#
+# JRE version:  (11.0.9+11) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.9+11-post-Debian-1deb10u1, mixed mode, sharing, tiered, compressed oops, g1 gc, linux-amd64)
+# Problematic frame:
+# V  [libjvm.so+0xb48818]
+#
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dapplication.home=/usr/lib/jvm/java-11-openjdk-amd64 --add-modules=ALL-DEFAULT -Xms8m -Djdk.module.main=jdk.compiler jdk.compiler/com.sun.tools.javac.Main test.java
+
+Host: Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz, 12 cores, 12G, Debian GNU/Linux 10 (buster)
+Time: Wed Jan 20 22:36:18 2021 EST elapsed time: 0.019852 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x00007ffddfe3c000,0x00007ffde063b000],  sp=0x00007ffde0636070,  free space=8168k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xb48818]
+C  [libpthread.so.0+0x12730]
+
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x00000000000000d0
+
+Register to memory mapping:
+
+RAX=0x0 is NULL
+RBX=
+[error occurred during error reporting (printing register info), id 0xb, SIGSEGV (0xb) at pc=0x00007f8be8c9eb98]
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00007f8be90f7080, RCX=0x00007f8be92da495, RDX=0x0000000000000000
+RSP=0x00007ffde0636070, RBP=0x00007ffde0636130, RSI=0x00007ffde0636270, RDI=0x0000000000000001
+R8 =0x00000000000000ca, R9 =0x00007f8be7c939d0, R10=0x0000000000000000, R11=0x0000000000000246
+R12=0x0000000000000000, R13=0x00007ffde0636270, R14=0x00007ffde0636140, R15=0x0000000000000001
+RIP=0x00007f8be8afd818, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007ffde0636070)
+0x00007ffde0636070:   000000000000065a 00007f8be9109ca0
+0x00007ffde0636080:   00007f8be9511460 00007ffde0636108
+0x00007ffde0636090:   00007ffde0636104 00007f8be952385e
+0x00007ffde06360a0:   00007f8b00000000 00007f8be9109ca0 
+
+Instructions: (pc=0x00007f8be8afd818)
+0x00007f8be8afd718:   ef 4c 89 f2 48 89 de e8 fc 49 72 ff 4c 89 e7 e8
+0x00007f8be8afd728:   44 4d 72 ff 48 81 c4 08 01 00 00 5b 41 5c 41 5d
+0x00007f8be8afd738:   41 5e 41 5f 5d c3 66 90
